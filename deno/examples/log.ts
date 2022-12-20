@@ -1,6 +1,6 @@
 import * as log from "https://deno.land/std@0.170.0/log/mod.ts";
 import { WhistleProgram } from "../mod.ts";
-import { readString } from "../../utils.ts";
+import { readString } from "../utils.ts";
 import { WhistleStorage } from "../mod.ts";
 
 log.setup({
@@ -15,7 +15,7 @@ log.setup({
   loggers: {
     default: {
       level: "DEBUG",
-      handlers: ["console", "file"],
+      handlers: ["console"],
     },
 
     tasks: {

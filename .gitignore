@@ -1,2 +1,4 @@
 *.wasm
 *.txt
+test.ts
+test.whi

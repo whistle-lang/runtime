@@ -6,8 +6,9 @@ extern "log" {
 }
 
 export fn main() {
-    debug("Hello world")
-    warning("Hello world")
-    info("Hello world")
-    error("Hello world")
+    val msg: str = "Hello World!"
+    debug(msg)
+    error(msg)
+    warning(msg)
+    info(msg)
 }
