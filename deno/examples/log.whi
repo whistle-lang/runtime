@@ -1,0 +1,13 @@
+extern "log" {
+    fn debug(message: str),
+    fn error(message: str),
+    fn warning(message: str),
+    fn info(message: str),
+}
+
+export fn main() {
+    debug("Hello world")
+    warning("Hello world")
+    info("Hello world")
+    error("Hello world")
+}
