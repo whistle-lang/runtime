@@ -1,0 +1,4 @@
+extern "WindowsAndMessaging" {
+    fn MessageBoxA(hwnd: i64, message: str, caption: str, MB: i32),
+    fn SetCursorPos(x: i32, y: i32),
+}

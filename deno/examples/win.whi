@@ -1,0 +1,17 @@
+extern "WindowsAndMessaging" {
+    fn MessageBoxA(hwnd: i64, message: str, caption: str, MB: i32),
+    fn SetCursorPos(x: i32, y: i32),
+}
+
+export fn main() {
+    var ptr: i64 = 0
+    var caption: str = "Hello\0"
+    var msg: str = "Hello, world!\0"
+    MessageBoxA(
+        ptr,
+        msg,
+        caption,
+        1
+    )
+    SetCursorPos(23,45)
+}
