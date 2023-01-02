@@ -1,0 +1,12 @@
+extern "DOM" {
+    fn Document(content: str): i32,
+    fn DocumentQuerySelector(doc: i32, selectors: str): i32,
+    fn PrintDocument(doc: i32): none,
+    fn ElementSetInnerHTML(element: i32, content: str): none,
+}
+
+export fn main() {
+    val msg: str = "<h1>Lorem ipsum dolor...</h1>"
+    val doc: i32 = Document(msg)
+    PrintDocument(doc)
+}

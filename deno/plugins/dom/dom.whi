@@ -1,0 +1,6 @@
+extern "DOM" {
+    fn Document(content: string): i32,
+    fn DocumentQuerySelector(doc: i32, selectors: str): i32,
+    fn PrintDocument(doc: i32): none,
+    fn ElementSetInnerHTM(element: i32, content: str): none,
+}
